@@ -6,6 +6,18 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "k4nMtUV2vK6-vn7di",
+      });
+   })();
+</script>
+
   </head>
   <body>
     <nav id="desktop-nav">
@@ -264,7 +276,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/princeproject-1 (2).png"
                 alt="Project 1"
                 class="project-img"
               />
@@ -273,13 +285,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PrinceYadav456'"
+                onclick="location.href='https://github.com/PrinceYadav456/FUTURE_FS_02'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PrinceYadav456'"
+                onclick="location.href='https://prince-yadav-voltkart.netlify.app/'"
               >
                 Live Demo
               </button>
@@ -288,7 +300,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/princeproject-2.png"
                 alt="Project 2"
                 class="project-img"
               />
@@ -297,13 +309,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PrinceYadav456'"
+                onclick="location.href='https://github.com/PrinceYadav456/FUTURE_FS_03'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PrinceYadav456'"
+                onclick="location.href='https://princeyadavcartify.vercel.app/'"
               >
                 Live Demo
               </button>
@@ -312,7 +324,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/princeproject-3.png"
                 alt="Project 3"
                 class="project-img"
               />
@@ -321,13 +333,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PrinceYadav456'"
+                onclick="location.href='https://github.com/PrinceYadav456/PIZZA-HUT'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PrinceYadav456'"
+                onclick="location.href='https://prince-yadav-pizza-hut.netlify.app/'"
               >
                 Live Demo
               </button>
@@ -345,32 +357,13 @@
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:princeyaday456@gmail.com"
-              >princeyaday456@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/prince-yadav-a379962aa"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
+      <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="status-message"></p>
     </section>
     <footer>
       <nav>

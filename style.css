@@ -428,3 +428,65 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+
+#contact {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#contact button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Add this to your CSS file or inside <style> tag */
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 15px;
+  }
+}
